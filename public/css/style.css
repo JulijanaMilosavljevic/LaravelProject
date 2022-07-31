@@ -1,0 +1,1227 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Shippori Mincho B1', serif;
+    background-color: #edeff4;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+#header{
+    width: 100%;
+    background-image: url("../images/pozadina.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+
+}
+
+#headerHolder{
+
+    width: 1200px;
+    margin: 0px auto;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    }
+#headerHolder #logo{
+    font-family: 'Dancing Script', cursive;
+
+}
+#headerHolder #logRegList{
+    display: flex;
+    width: 75%;
+    float: right;
+    justify-content: space-around;
+
+}
+#socialList {
+    display: flex;
+    float: left;
+    width: 50%;
+    justify-content: space-around;
+}
+#socialList .fa{
+    font-size: 20px;
+}
+#socialList .faDesign:hover{
+    color: #e2e2e2;
+}
+.widthHeaderElements{
+    width: 33.33%;
+}
+#registrationForm, #logForm, #cart{
+    background-color: #e2e2e2;
+    border-radius: 7px;
+
+}
+
+#registrationForm{
+    position: absolute;
+    top: 70px;
+    left: 23%;
+    z-index: 201;
+    padding: 30px;
+    width: 55%;
+    text-align: left;
+    color:#555;
+}
+.x{
+    margin-left: 93%;
+    font-size: 20px;
+    padding-bottom:10px;
+    color: #e2e2e2;
+}
+#registrationForm #male{
+    margin-left: 10px;
+}
+#registrationForm table {
+    margin: 0px auto;
+    width: 100%;
+}
+#registrationForm #regName ,#registrationForm #regPass,#registrationForm #regPass1,#registrationForm #email,#registrationForm #tel,#registrationForm #town,#registrationForm #address,#registrationForm #zip{
+    width: 100%;
+    height: 32px;
+    font-size: 15px;
+    padding-left: 10px;
+    color:#555;
+    border:0;
+    /*border-radius: 5px;*/
+}
+#registrationForm .marginTd{
+    padding-left: 10px;
+}
+#registrationForm input {
+    margin-bottom: 10px;
+}
+#registrationForm #btnRegistration {
+    width: 100px;
+    height: 35px;
+    background-color: #d6d28b;
+    color: #555;
+    border-width: 0px;
+    border-radius: 3px;
+    font-size: 13px;
+    display: block;
+    margin: 10px auto 0px auto;
+}
+#registrationForm #btnRegistration, .x:hover, #logForm #logIn, .fa-heart-o{
+    cursor: pointer;
+}
+.fa-heart{
+
+}
+.error {
+    color: #555555;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+.errorRegistration{
+    color: #555555 !important;
+    margin-top: 10px;
+}
+.success{
+    color:#d6d28b;
+    font-weight:bold;
+}
+#registrationForm #headlineReg{
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+    padding: 0px 0px 20px 0px;
+    color: #555;
+    font-family: 'Shippori Mincho B1', serif;
+}
+#logForm{
+    position: absolute;
+    z-index: 200;
+    width: 180px;
+    padding: 10px 20px 20px 20px;
+    top:40px;
+    left:70%;
+    border:0;
+    margin-top: 8px;
+}
+#logForm #logUsername,#logForm #logPass{
+    width: 100%;
+    height: 25px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border:0;
+    /*border-radius: 5px;*/
+}
+#logForm #logIn{
+    padding: 8px;
+    color: #555;
+    border-radius: 3px;
+    border-width:0px;
+    margin-bottom:5px;
+    background-color:#d6d28b;
+    font-size: 15px;
+}
+#cart {
+    position: absolute;
+    z-index: 202;
+   /* background-color:rgb(5, 3, 33);*/
+    text-align: center;
+    color: #555;
+    width: 60%;
+    margin-left: -45%;
+    padding:20px;
+}
+#wishlistHeadline{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.prodPicWishlist{
+    height: 180px;
+}
+#cart .quantity{
+    margin-top: 10px;
+    height: 30px;
+    font-size: 15px;
+    color: #555;
+    font-weight: bold;
+    padding-left: 7px;
+}
+#cart table td,th{
+    border: 1px solid #555;
+    margin:0px;
+    padding:20px;
+}
+#orderBtns{
+    width: 25%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+}
+#closeCart{
+    padding:10px;
+    background-color: #d6d28b;
+    font-size: 15px;
+    border-width: 0px;
+    margin-top:15px;
+    color: #555555;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+#cart .removeBtn{
+    padding: 7px;
+    width: 30px;
+    height: 30px;
+    color: #555555;
+    border-radius: 50%;
+    border-width: 0px;
+    background-color: #d6d28b;
+    margin-top: 15px;
+}
+#orderBtn{
+    height: 0%;
+    font-size: 15px;
+    border-width: 0px;
+    border-radius: 5px;
+    padding:10px;
+    margin-top:15px;
+    color: #fff;
+    background-color: #250966;
+    border: 1px solid #3033c9;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+#cart .removeBtn:hover,#closeCart:hover{
+    cursor:pointer;
+}
+#total{
+    padding: 20px;
+    font-size:20px;
+}
+
+#menu{
+    background-color:#e2e2e2;
+    border-radius: 5px;
+    width: 100%;
+    margin: 0px auto;
+}
+#menu #menuList{
+    display: flex;
+    justify-content: space-around;
+    padding: 7px 0px;
+    width: 70%;
+    margin: 0px auto;
+    color: #555;
+}
+.active{
+    color:#d6d28b;
+    font-weight: bold;
+   /* border-bottom: 2px dotted #eb34e1;*/
+}
+#wrapper{
+    width: 85%;
+    margin: 0px auto;
+  /*  color: rgb(5, 3, 33);*/
+}
+#mainContent{
+    display: flex;
+}
+#leftWrapper{
+    width: 20%;
+    padding: 30px 15px 0px 15px;
+    background-color: #edeff4;
+   /* background-image: linear-gradient(to bottom, #fcccf9,#fff);*/
+}
+#left{
+    position: sticky;
+    top: 30px;
+    bottom: 30px;
+    height: 350px;
+}
+#priceRange{
+    margin-top: 30px;
+}
+#leftCategories li{
+    margin: 0px auto;
+    text-align: center;
+    padding: 7px 0px;
+    color: #ffffff;
+    background-color: #555555;
+    margin-bottom: 3px;
+    border-radius: 5px;
+}
+#leftCategories li a {
+    color:#fff;
+}
+
+#left label{
+    /*font-weight: bold;*/
+    font-size: 17px;
+}
+#price{
+    width: 100%;
+}
+#priceValue{
+    font-size: 20px;
+    margin-top: -3px;
+    font-weight: bold;
+    float: right;
+}
+#leftCategories .fa-angle-right{
+    float: right;
+    color: #fff;
+    font-size: 17px;
+    padding-right: 15px;
+    margin-top: 4px;
+    height: 100%;
+}
+.activeCategoryLeftSide a{
+    color: #d6d28b !important;
+}
+#priceSort{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-bottom: 40px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #555;
+    font-family: 'Shippori Mincho B1', serif;
+    font-weight: bold;
+    border: 0;
+   /* border-radius: 5px 0px 0px 5px;*/
+}
+#priceSortHolder:after{
+    content: '>';
+    font: 25px 'Carter One', cursive;
+    color: #d6d28b;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: -5px;
+
+    top: 5px;
+    /*border-bottom: 1px solid rgb(5, 3, 33);*/
+    padding: 0px 17px;
+
+    position: absolute;
+    pointer-events: none;
+}
+#left .fa-angle-down{
+    color: #fff;
+    font-size: 20px;
+    padding: 13px 10px;
+    border-radius:0px 5px 5px 0px;
+    background-color: rgb(5, 3, 33);
+    margin-left: -5px;
+}
+input[type=range] {
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: 100%; /* Specific width is required for Firefox. */
+    background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+
+    /* Hides the slider so custom styles can be added */
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid #000000;
+    height: 18px;
+    width: 18px;
+    border-radius: 30%;
+    background: #ffffff;
+    cursor: pointer;
+    margin-top: -6px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    box-shadow: 1px 1px 1px #555, 0px 0px 1px #555; /* Add cool effects to your sliders! */
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #d6d28b;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #555;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #d6d28b;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: #555;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #555;
+}
+input[type=range]::-ms-fill-upper {
+    background: #555555;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #555555;
+}
+
+#products{
+    width: 80%;
+    margin: 0px auto;
+    padding: 20px 0px;
+}
+#searchHolder{
+    width: 95%;
+    margin: 15px auto 40px auto;
+    display: flex;
+    height: 35px;
+    border:0;
+    background-color: #edeff4;
+    border-bottom:1px solid #d6d28b;
+}
+#searchBtn{
+    width: 95%;
+    padding: 0px 7px;
+    font-size: 15px;
+    color:#555;
+    border:0;
+    background-color: #edeff4;
+}
+.fa-search{
+    font-size: 15px;
+    padding: 10px 10px;
+    /*background-color:rgb(5, 3, 33);*/
+    color: #555;
+    border-radius: 5px 0px 0px 5px;
+    cursor: pointer;
+}
+#prod{
+    padding: 0px 10px;
+}
+
+.product{
+    width: 20%;
+    /*margin: 20px 0px 0px 40px;*/
+    overflow: hidden;
+   /* border: 2px dotted #eb34e1;*/
+   /* border: 2px dotted #e895e3;*/
+    /*border-radius: 0px 0px 10px 10px;*/
+    position: relative;
+    margin: 0px auto;
+    height: 0%;
+}
+.product .fa-heart-o{
+    position: absolute;
+    padding: 7px;
+    font-size: 20px;
+    color: #d6d28b;
+}
+.prodRow{
+    margin-bottom: 20px;
+    display:  flex;
+}
+.prodPic {
+    width:100%;
+    height:auto;
+    background-size: cover;
+}
+.prodData{
+    padding: 5px 5px 0px 5px;
+    text-align: center;
+    background-color: #d6d28b;
+   /* background-image: linear-gradient(to top, #fcccf9,#f587ee);*/
+    /*background-image: linear-gradient(to top, #f244e9,#fcccf9,#fff);*/
+}
+.prodName{
+    font-size: 12px;
+    font-weight: normal;
+}
+.prodPrice{
+    font-family: 'Shippori Mincho B1', serif;
+    font-size: 30px;
+}
+.hot{
+    font-size: 10px;
+    background-color: #d6d28b;
+    padding: 6px 0px;
+    width: 80px;
+    color: #fff;
+    text-align: center;
+    transform: rotate(37deg);
+    position: absolute;
+    float: right;
+    /*bottom: 18px;*/
+    margin-top: 1px;
+    margin-left: 120px;
+}
+.prodData del{
+    font-size: 14px;
+    margin-left: 5px;
+}
+.dollar{
+    font-family: 'Shippori Mincho B1', serif;
+    font-size: 18px;
+}
+#pagination /*nav .pagination*/{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    margin: 20px auto 20px auto;
+}
+#pagination a{
+    color: #555;
+    padding: 5px;
+}
+.activePagination{
+    background-color: #d6d28b;
+}
+#footer{
+    width:100%;
+    background-image: url("../images/pozadina.jpg");
+    background-size: cover;
+    font-size: 18px;
+}
+#footerPic{
+
+    padding: 20px 0px;
+}
+#footCont{
+    display:flex;
+    width:100%;
+    justify-content: center;
+}
+#footer h4{
+    color: #555555;
+    font-size:17px;
+    letter-spacing: 2px;
+    padding-bottom:20px;
+}
+#footer p{
+    font-size: 16px;
+}
+#footer .fa{
+    padding-bottom: 7px;
+    font-size: 20px;
+}
+#footer .fa:hover{
+    color: #d6d28b;
+}
+#footer .information{
+    text-align: center;
+    width:20%;
+    color:#555;
+    padding:30px 0px;
+}
+.information ul li{
+    display: inline;
+    margin-right: 2%;
+}
+#copyright{
+    text-align: center;
+    color: #555555;
+    font-size:13px !important;
+}
+#copyright a{
+    color:#555555;
+}
+
+#contact{
+    padding: 20px 0px 0px 0px;
+    background-color: #edeff4;
+}
+#contentAdmin{
+    display: flex;
+    justify-content: center;
+}
+#emailAddress, #body{
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 20px;
+    padding: 7px 0px 7px 5px;
+    color:  #555555;
+    border-radius: 0px;
+}
+#cute{
+    width: 450px;
+    height: 200px;
+    margin-top:3%;
+    margin-right: 50px;
+}
+#body {
+    height: 150px;
+}
+#headlineAdmin, #headlineAuthor{
+    font-size: 35px;
+    font-weight: normal;
+    padding-bottom: 25px;
+    text-align: center;
+}
+#adm{
+    padding:40px 0px;
+    color: #555555;
+    font-size:18px;
+    width:45%;
+    letter-spacing: 1px;
+    padding-top:0;
+}
+#sendAdmin{
+    display:block;
+    margin:0px auto;
+    background-color: #d6d28b;
+    text-transform:uppercase;
+    padding: 10px 8px;
+    color: #555555;
+    border-width:0px;
+    font-size:15px;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#contactAdmin{
+    width:45%;
+    padding:30px;
+}
+#author{
+    padding: 40px 0px;
+   background-color: #edeff4;
+}
+#author1{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0px auto;
+    height: auto;
+    padding: 20px 0px;
+}
+#authorAbout{
+    width: 60%;
+}
+#picAuthor{
+    width: 25%;
+    height: 300px;
+    background-image: url("../images/autor.jpg");
+    background-size: cover;
+}
+
+/*ADMIN*/
+#helloUsername{
+    position:fixed;
+    top:0px;
+    z-index:10;
+    width:inherit;
+    background-color: #edeff4;
+}
+#helloAdmin{
+    text-align:center;
+    font-size: 27px;
+    padding:30px 0px;
+    color:#d6d28b;
+}
+#helloUsername a{
+    float:right;
+    font-size: 20px;
+    padding: 15px 35px 10px 0px;
+    color:#d6d28b;
+}
+#menuAdminDiv{
+    width: 60%;
+    margin: 0px auto;
+}
+#menuAdmin{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+#menuAdmin a{
+    font-size: 17px;
+    color: #d6d28b;
+}
+#prodAdm{
+    width:100%;
+    height:auto;
+    text-align: center;
+    margin-top:134px;
+    background-color:#edeff4;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    background-size: cover;
+}
+#absProd{
+    margin-top: 10px;
+    z-index:1;
+    background-color: #edeff4;
+}
+#searchHolderA{
+    width: 90%;
+    margin: 15px auto 40px auto;
+    display: flex;
+    height: 35px;
+    background-color: #edeff4;
+    border-bottom: 1px solid #d6d28b;
+}
+#searchHolderA .fa-search{
+    background-color: #edeff4;
+}
+#searchBtnA{
+    width: 100%;
+    border:0;
+    padding: 0px 7px;
+    font-size: 15px;
+    background-color: #edeff4;
+}
+#headlineProd{
+    color: #555555;
+    padding-top: 30px;
+    letter-spacing: 1px;
+}
+#tableProd{
+    height:auto;
+    margin:0px auto;
+    width:90%;
+    color: #555555;
+    font-size: 17px;
+}
+#tableProd td{
+    border:1px solid #555555;
+    padding:15px;
+}
+#tableProd th{
+    border-color: #555555;
+    font-size:20px;
+    padding:10px;
+    color:#555555;
+}
+#tableProd .idDish{
+    color:#555555;
+}
+#tableProd .prodNameA{
+    font-size: 15px;
+}
+.picHold{
+    width: 120px;
+}
+.smallPic{
+    width: 120px;
+    height: 150px;
+}
+.hotAdm{
+    font-size: 15px;
+    color: #fff;
+    background-color: #d6d28b;
+    width: 120px;
+    padding: 3px;
+    margin-top: -5px;
+}
+.btnUpd,#nextNew{
+    margin-bottom: 10px;
+    background-color: #d6d28b;
+}
+.btnDel, .delUser, #categoriesDeleteA{
+    background-color:#d6d28b;
+}
+.btnUpd, .btnDel,#proceedUpd,#insertDish,#proceedIns,#nextNew,.disableBtn,.enableBtn,#continue,.delUser,.updUser,#proceedUpdU,#categoriesRenameA,#categoriesDeleteA,#categoriesInsertA,#authSubmit{
+    text-transform:uppercase;
+    padding: 7px;
+    color: #555555;
+    border-width:0px;
+    font-size:12px;
+    border-radius: 5px;
+    background-color: #d6d28b;
+}
+.btnUpd,#proceedUpd,#proceedIns,#insertDish,#sendAdmin,.delUser,.updUser,#proceedUpdU,.btnDel,#categoriesRenameA,#categoriesDeleteA,#categoriesInsertA,#authSubmit:hover{
+    cursor:pointer;
+    background-color: #d6d28b;
+}
+.fa-close{
+    cursor:pointer;
+}
+#updateForm,#insertForm, #updateUserForm{
+    position: absolute;
+    z-index:15;
+    background-color:#edeff4;
+    color: #555555;
+    margin:0px 35%;
+    width: 35%;
+    padding: 0px 40px 40px 40px;
+    border-radius: 7px;
+}
+#prodName,#prodCat,#prodPrice,#hotProd,#oldPrice,#prodNameI,#prodPriceI,#hotProdI,#oldPriceI,#prodCatI,#userName,#passU,#mailU,#sendnewsU,#roleU{
+    width:100%;
+    margin-bottom: 20px;
+    padding:7px;
+    font-size:14px;
+    border-radius: 5px;
+    border-width: 0;
+    border: 1px solid #d6d28b;
+}
+#newDish,#newDishI{
+    color:gray;
+}
+#proceedUpd,#proceedIns,#proceedUpdU,.updUser{
+    display:block;
+    background-color:#d6d28b;
+    margin:0px auto;
+}
+#imgDish,#imgDishI{
+    margin-bottom: 20px;
+    color: #555555;
+}
+#updateForm label,#insertForm label{
+    margin-bottom:17px;
+    display: block;
+}
+#updateForm .fa-close,#insertForm .fa-close,#updateUserForm .fa-close{
+    float:right;
+    padding: 20px 0px;
+    color:#555555;
+    font-size:20px;
+    background-color:#edeff4;
+}
+#insertDish{
+    margin: 25px 0px 10px 0px;
+    background-color: #d6d28b;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#updateForm .success,#insertForm .success,#updateUserForm .success{
+    color:#344660;
+    padding-bottom:20px;
+}
+#prodAdm #paginationA li{
+    display: inline;
+    padding:0px 5px;
+}
+#prodAdm #paginationA .paginationLinksA{
+    color: #d6d28b;
+}
+#prodAdm #paginationA .filteredPagination{
+    color: #d6d28b;
+}
+#prodAdm #paginationA{
+    padding: 20px 0px;
+}
+.activePaginationA{
+    font-weight: bold;
+}
+.picHold{
+    margin:0px auto;
+}
+#users{
+    padding: 30px 20px;
+    background-color: #edeff4;
+}
+#updateUserForm label{
+    display: block;
+    margin-bottom: 10px;
+}
+#updateUserForm{
+    margin: 0px 25%;
+}
+#tableUsers {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+#tableUsers td{
+   border: 1px solid #555555;
+    padding: 10px;
+}
+#tableUsers th{
+     border: 1px solid #555555;
+     margin:0px;
+     padding:15px;
+ }
+.updUser, .delUser{
+    font-size: 11px;
+    display: block;
+    margin: 0px auto;
+    background-color: #d6d28b;
+}
+.updUser{
+   margin-bottom: 7px;
+}
+#users h1, #authCatAdmin h1, #messMenuSocHolder h1, #activity h1{
+    text-align: center;
+    letter-spacing: 1px;
+    color: #555555;
+}
+#authCatAdmin{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #edeff4;
+}
+#categoriesA{
+    width: 40%;
+   background-color: #edeff4;
+}
+#authA{
+    width: 55%;
+    padding: 0px 17px;
+   background-color: #edeff4;
+}
+#authCatAdmin h1{
+    margin-bottom: 20px;
+}
+
+#categoriesListA{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-bottom: 30px;
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    color: #555555;
+    font-family: 'Shippori Mincho B1', serif;
+    font-weight: bold;
+    border: 1px solid #555;
+    border:0;
+}
+#categoriesListAHolder{
+    position: relative;
+}
+#categoriesListAHolder:after{
+    content: '>';
+    font: 25px 'Carter One', cursive;
+    color: #d6d28b;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 42px;
+
+    top: 5px;
+    border:0;
+    padding: 0px 17px;
+
+    position: absolute;
+    pointer-events: none;
+}
+#categoriesInsertA{
+    background-color: #d6d28b;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+#categoriesRenameA,#authSubmit{
+    background-color: #d6d28b;
+    margin-right: 10px;
+}
+#newCatName{
+    font-size: 14px;
+    border-radius: 5px;
+    border-width: 0;
+    border: 2px solid #d6d28b;
+    width: 40%;
+    padding: 5px;
+    margin-top: 20px;
+}
+#proceedInsertCat, #proceedRenameCat{
+    background-color: #d6d28b;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #555555;
+    font-size: 15px;
+    margin-left: 10px;
+    padding: 7px;
+}
+#categoriesA .success, #categoriesA .error{
+    margin-bottom: 8px;
+}
+#authSubmit{
+    margin-top: 15px;
+}
+#contactAdmin .success{
+    margin-top: 15px;
+}
+#messMenuSocHolder{
+    display: flex;
+    justify-content: space-around;
+    background-color: #edeff4;
+    padding: 30px 20px;
+}
+#messMenuSocHolder .fa-close{
+    float: right;
+    color: #555555;
+    font-size: 17px;
+}
+#messMenuSocHolder h1{
+    margin-bottom: 20px;
+}
+#messages{
+    padding: 0px 20px 20px 20px;
+}
+.message{
+    background-color: #d6d28b;
+    margin-bottom: 20px;
+    padding: 10px 10px 20px 20px;
+}
+.messEmail{
+    padding-bottom: 2px;
+}
+.messContent{
+    display: block;
+    margin-top: 15px;
+    text-indent: 10px;
+}
+.messMenuSocKids{
+    width: 50%;
+}
+#socialsAdmin{
+    margin: 0px auto;
+    width: 40%;
+    text-align: center;
+}
+#socialsAdmin td{
+    padding: 10px;
+}
+.socialsBtns{
+    display: flex;
+    justify-content: space-around;
+}
+#socialsAdmin .fa{
+    color: #555;
+    font-size: 30px;
+}
+#socialsAdmin tbody{
+  color:#555555;
+}
+#socialsAdmin .fa:hover{
+    color: #d6d28b;
+}
+.updSoc,.delSoc, #insertSoc, #proceedUpdSoc, #proceedInsSoc{
+    border-width: 0px;
+    border-radius: 3px;
+    padding: 5px;
+    color: #555555;
+    background-color: #d6d28b !important;
+    font-size: 13px;
+}
+.delSoc{
+    background-color: #d6d28b;
+}
+#insertSoc{
+    display: block;
+    margin: 0px auto;
+    background-color: #edeff4;
+    margin-bottom: 20px;
+}
+#faHref, #faClass{
+    font-size: 14px;
+    border-radius: 5px;
+    border-width: 0;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+#modifySoc{
+    text-align: center;
+    padding-bottom: 15px;
+}
+#socA .success, #socA .error{
+    text-align: center;
+}
+#activity{
+    padding: 20px 20px 40px 20px;
+    background-color:#edeff4;
+    margin-top: 108px;
+}
+#activity h1{
+    margin-bottom: 20px;
+}
+#userActivity{
+    overflow-y: auto;
+    /*overflow-x: auto;*/
+    height: 450px;
+    background-size: cover;
+    /*width: 500px;*/
+    white-space: nowrap;
+    background-color:#edeff4;
+    background-attachment: fixed;
+    color: #555;
+}
+#userActivityAbs{
+    padding-left:30px;
+    background-color:#edeff4;
+    width: 100%;
+}
+#activityTable{
+    margin: 0px auto;
+    width: 80%;
+}
+#activityTable th{
+    font-size: 20px;
+    color: lightblue;
+    border: 1px solid lightblue;
+}
+#activityTable td{
+    padding: 2px 0px 2px 15px;
+    border: 1px solid lightblue;
+}
+
+#activityList{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 16px;
+    color: #555555;
+    font-family: 'Shippori Mincho B1', serif;
+    font-weight: bold;
+    border: 1px solid #555555;
+    border-radius: 5px 0px 0px 5px;
+    width: 100%;
+}
+#activityListHolder{
+    width: 15%;
+    position: relative;
+    margin: 0px auto;
+}
+#activityListHolder:after {
+    content: '>';
+    font: 25px 'Carter One', cursive;
+    color: #d6d28b;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 1px;
+    top: 5px;
+    border:0;
+    padding: 0px 17px;
+    position: absolute;
+    pointer-events: none;
+}
+#back{
+    color: #d6d28b;
+    font-size: 20px;
+}
+#back .fa{
+    font-size: 25px;
+    padding-left: 35px;
+    padding-right: 7px;
+}
+#activityLi{
+    position: relative;
+}
+#newAct{
+    padding: 2px 3px;
+    color: #fff;
+    background-color: #555;
+    border-radius: 50%;
+    font-size: 15px;
+    position: absolute;
+    margin-left: 55px;
+}
+
+
